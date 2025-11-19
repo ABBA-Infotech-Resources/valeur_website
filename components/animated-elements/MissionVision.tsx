@@ -9,12 +9,12 @@ import { Flip } from 'gsap/Flip'
 gsap.registerPlugin(ScrollTrigger, Flip)
 
 export default function MissionVision() {
-  const containerRef = useRef(null)
-  const visionRef = useRef(null)
-  const missionRef = useRef(null)
-  const visionContentRef = useRef(null)
-  const missionContentRef = useRef(null)
-  const listItemsRef = useRef([])
+  const containerRef = useRef<HTMLDivElement | null>(null)
+  const visionRef = useRef<HTMLDivElement | null>(null)
+  const missionRef = useRef<HTMLDivElement | null>(null)
+  const visionContentRef = useRef<HTMLDivElement | null>(null)
+  const missionContentRef = useRef<HTMLDivElement | null>(null)
+  const listItemsRef = useRef<HTMLLIElement[]>([] as HTMLLIElement[])
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -122,7 +122,7 @@ export default function MissionVision() {
     return () => clearTimeout(timer)
   }, [])
 
-  const addListRef = (el) => {
+  const addListRef = (el: HTMLLIElement | null) => {
     if (el && !listItemsRef.current.includes(el)) {
       listItemsRef.current.push(el)
     }
