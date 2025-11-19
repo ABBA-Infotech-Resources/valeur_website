@@ -1,5 +1,29 @@
 @import "tailwindcss";
 
+
+
+@font-face {
+  font-family: 'Libre'; /* Choose a name for your font */
+  src: url('/fonts/LibreBaskerville-Bold.woff2') format('woff2'); /* Path from public folder */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* Recommended: prevents invisible text during load */
+}
+@font-face {
+  font-family: 'Lato-Bold'; /* Choose a name for your font */
+  src: url('/fonts/Lato-Bold.woff2') format('woff2'); /* Path from public folder */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Recommended: prevents invisible text during load */
+}
+@font-face {
+  font-family: 'Lato-Regular'; /* Choose a name for your font */
+  src: url('/fonts/Lato-Regular.woff2') format('woff2'); /* Path from public folder */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Recommended: prevents invisible text during load */
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -10,6 +34,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-myprim:#1A2A40;
+  --color-mysec:#6BC984;
+  --color-mybg:#F5FFF9;
+  --color-mybg_2:#E9F9EE;
+  --color-mytext:#727272;
+  
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +54,182 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Lato-Regular', serif;
+  
+}
+
+
+@layer utilities {
+
+.MyH1{
+  font-family: 'Libre', serif;
+
+font-size: 96px;
+font-weight: bold;
+
+
+}
+.MyH2{
+  font-family: 'Libre', serif;
+
+font-size: 59px;
+font-weight: bold;
+color: #1A2A40;
+
+}
+.MyH3{
+  font-family: 'Libre', serif;
+
+font-size: 47px;
+font-weight: bold;
+color: #1A2A40;
+
+
+}
+.MyH4{
+  font-family: 'Libre', serif;
+
+font-size: 33px;
+font-weight: bold;
+color: #1A2A40;
+
+
+}
+.MyH5{
+  font-family: 'Libre', serif;
+
+font-size: 24px;
+font-weight: bold;
+color: #1A2A40;
+
+
+}
+.MyH5_new{
+  font-family: 'Libre', serif;
+
+font-size: 24px;
+font-weight: bold;
+
+
+
+}
+.MyH6{
+  font-family: 'Libre', serif;
+
+font-size: 20px;
+font-weight: bold;
+color: #1A2A40;
+
+
+}
+.S1{
+font-size: 16px;
+font-weight:normal;
+font-family: 'Lato-Bold', serif;
+
+
+
+}
+
+.S2{
+font-size: 14px;
+font-weight:normal;
+font-family: 'Lato-Bold', serif;
+
+
+
+
+}
+
+.B1{
+font-size: 16px;
+font-weight: normal;  
+/* font-family: 'Lato-Regular', serif; */
+
+color: #727272;
+
+
+
+}
+.B2{
+font-size: 14px;
+font-weight: normal;  
+font-family: 'Lato-Regular', serif;
+
+
+
+}
+
+.fontBtn{
+font-size: 18px;
+font-weight: medium;  
+font-family: 'Lato-Regular', serif;
+
+
+
+}
+.fontCaption{
+
+font-size: 12px;
+font-weight: medium; 
+
+}
+
+
+
+
+.myprim{
+
+
+
+  background-color:#1A2A40;    
+}
+
+.mysec{
+
+
+  background-color: #6BC984;
+}
+
+
+.mysechover{
+
+
+  background-color: #5eb074;
+}
+
+.myBg{
+
+background-color: #F5FFF9;
+
+
+}
+
+
+
+}
+
+/* In your global CSS file (e.g., globals.css) */
+
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start 20px below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+/* Define custom Tailwind utilities using the @layer directive */
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fadeInSlideUp 0.7s ease-out forwards;
+  }
+  /* Optional: Utility for staggered delay */
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
 }
