@@ -1,7 +1,11 @@
-import Image from 'next/image'
 import React from 'react'
 import Service_1 from '@/images/Slider/Service_1.jpg'
-import list from "@/images/list.png"
+import Service_2 from '@/images/Slider/Service_2.jpg'
+import Service_3 from '@/images/Slider/Service_3.jpg'
+import Service_4 from '@/images/Slider/Service_4.jpg'
+import Service_5 from '@/images/Slider/Service_5.jpg'
+import Service_6 from '@/images/Slider/Service_6.jpg'
+import ImageSlider from '../ui/ImageSlider'
 import ServiceCard from '../ui/ServiceCard'
 import TitleSection from '../ui/TitleSection'
 
@@ -12,12 +16,8 @@ export default function OurService() {
       <TitleSection Title='Our Services' Description='Strategic pathways to lasting trade relationships. As a French-based company with deep networks in 
 Nigeria and West Africa, we deliver precision, trust, and market intelligence every step of the way.'/>
 
-      <div className=' w-[90%] overflow-hidden rounded-lg '>
-
-        <Image src={Service_1} className='object-cover w-full ' alt='Valeur_service'/>
-        
-
-
+      <div className=' w-[90%] h-64 md:h-[408px] '>
+        <ImageSlider images={[Service_1, Service_2, Service_3, Service_4, Service_5, Service_6]} />
       </div>
 
 <div className="grid md:grid-cols-2 grid-cols-1 justify-between w-[90%]  gap-20">
