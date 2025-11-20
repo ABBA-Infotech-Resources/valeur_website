@@ -62,6 +62,8 @@ export default function Footer() {
 							<li><Link href="/about" className="text-gray-300 hover:underline" >About Us</Link></li>
 							<li><Link href="/market" className="text-gray-300 hover:underline" >Market</Link></li>
 							<li><Link href="/trade" className="text-gray-300 hover:underline" >Trade</Link></li>
+							<li><Link href="/trade" className="text-gray-300 hover:underline" >Resources</Link></li>
+
 							<li><Link href="/deals" className="text-gray-300 hover:underline" >Deals</Link></li>
 						</ul>
 					</div>
