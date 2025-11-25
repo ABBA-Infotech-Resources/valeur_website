@@ -13,7 +13,7 @@ export default function EUNigeria({cRef,iRef}: any) {
   return (
     <>
       
-<div className="flex lg:flex-row flex-col justify-between lg:items-center items-start w-full gap-24">
+<div className="flex lg:flex-row flex-col justify-between lg:items-center items-start w-full lg:gap-24 gap-5">
           <div className="flex flex-col gap-6 items-start lg:w-[900px]" ref={cRef}>
             <h1 className='MyH5'>Your Gateway to West Africa's Agricultural Powerhouse</h1>
 
@@ -33,7 +33,7 @@ export default function EUNigeria({cRef,iRef}: any) {
             <MyBtn name="Partner with Us" />
           </div>
 
-          <div className='overflow-hidden rounded-lg'>
+          <div className='overflow-hidden rounded-lg flex items-start justify-start '>
             <Image 
               ref={iRef}
               src={EU_Nigeria} 

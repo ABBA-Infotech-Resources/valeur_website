@@ -54,7 +54,7 @@ export default function AboutLeft() {
           tl.to(el, {
             opacity: 1,
             y: 0,
-            duration: .6,
+            duration: .5,
             ease: "power3.out"
           }, index * 0.2)
         }

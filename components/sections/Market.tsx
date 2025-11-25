@@ -14,7 +14,7 @@ export default function   Market() {
     <div className='w-full flex flex-col items-center myBg lg:px-20 px-8 gap-6 py-14 p  pt-32'>
         <div className="flex flex-col items-center justify-center gap-4">
 <h1 className='MyH4 animate-fade-in-up'>Markets We Serve</h1>
-<p className='text-[18px] text-mytext text-center animate-fade-in-up'>Linking two thriving agri-economies — the EU and Nigeria. We create reliable pathways for sustainable, profitable cross-border trade.</p>
+<p className='md:w-[600px] fontCaption text-center text-mytext text-[18px] animate-fade-in-up'>Linking two thriving agri-economies — the EU and Nigeria. We create reliable pathways for sustainable, profitable cross-border trade.</p>
 </div>
   <div className='w-[100%] h-64 md:h-[408px] relative overflow-hidden rounded-lg'>
         <Image src={Service_1} alt='Valeur_service' fill className='object-cover' />

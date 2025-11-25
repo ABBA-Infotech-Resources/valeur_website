@@ -59,11 +59,11 @@ export default function MarketToggle() {
 
     const scaleAnimation = gsap.fromTo(imageRef.current,
       {
-        scale: 0.85,
+        
         opacity: 0.7
       },
       {
-        scale: 1.1,
+        
         opacity: 1,
         ease: "none",
         scrollTrigger: {
