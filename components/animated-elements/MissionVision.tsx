@@ -58,14 +58,14 @@ export default function MissionVision() {
         opacity: 1,
        
         x: 0,
-        duration: .6,
+        duration: .4,
         ease: "power3.out"
       })
       .to(missionRef.current, {
         opacity: 1,
         
         x: 0,
-        duration: .6,
+        duration: .4,
         ease: "power3.out"
       }, "-=0.7")
 

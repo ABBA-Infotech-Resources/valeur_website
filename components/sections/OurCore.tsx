@@ -60,7 +60,7 @@ export default function OurCore() {
       tl.to(headingRef.current, {
         opacity: 1,
         y: 0,
-        duration: 1,
+        duration: .3,
         ease: "power3.out",
         onStart: () => console.log('Heading animation started')
       })
@@ -68,7 +68,7 @@ export default function OurCore() {
       .to(cards, {
         opacity: 1,
         y: 0,
-        duration: 1.2,
+        duration: .4,
         ease: "power3.out",
         stagger: 0.15,
         onStart: () => console.log('Cards animation started')

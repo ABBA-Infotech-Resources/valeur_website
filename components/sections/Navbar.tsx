@@ -28,13 +28,13 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 w-full pt-9 pb-4 px-6 md:px-12 lg:px-20 z-50 transition-all duration-300 ${
+    <nav className={`  fixed top-0 left-0 right-0 w-full pt-9 pb-4 px-6  md:px-12 lg:px-20 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
     }`}>
-      <div className='flex flex-row justify-between items-center w-full'>
+      <div className='flex flex-row justify-between items-center w-full  '>
         {/* Logo */}
         <Link href="/" className='z-50'>
-          <Image src={logo} alt="Logo" className='h-8 w-auto md:h-10' />
+          <Image src={logo} alt="Logo" className='h-8 w-auto md:h-16 ' />
         </Link>
 
         {/* Desktop Navigation */}

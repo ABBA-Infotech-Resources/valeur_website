@@ -12,10 +12,10 @@ import logo from '@/images/white_logo.png'
 export default function Footer() {
 	return (
 		<footer className="bg-[#142434] text-gray-300 w-full">
-			<div className="max-w-7xl mx-auto px-6 py-12">
-				<div className="grid grid-cols-1 md:grid-cols-4	 gap-8 ">
-					<div className="md:col-span-2">
-						<Image src={logo} alt="Logo" className='h-10 w-auto mb-4' />
+			<div className=" lg:px-20 px-6 py-12">
+						<Image src={logo} alt="Logo" className='h-24 w-auto mb-4' />
+				<div className="grid grid-cols-1 md:grid-cols-4	 gap-8 items-start justify-start">
+					<div className="md:col-span-2 md:col-start-1 ">
 						<h2 className="text-2xl MyH5_new text-white">Valeur Global Connect</h2>
 						<p className="mt-3 text-sm text-gray-300 max-w-lg">French Agricultural Trade Facilitator connecting Europe and Africa through trusted partnerships, regulatory compliance expertise, and sustainable trade solutions.</p>
 
@@ -23,7 +23,7 @@ export default function Footer() {
 
 						
 					</div>
-					<div className="mt-6 space-y-3 text-gray-300">
+					<div className=" space-y-3 text-gray-300 ">
 						<h3 className="text-white text-lg MyH5_new">Get in Touch</h3>
 							<div className="flex items-center gap-3">
 								<Image src={addressIcon} alt='address' className='w-5 h-5'/>
@@ -55,9 +55,9 @@ export default function Footer() {
 						</div>
 
 
-					<div className='lg:justify-self-end'>
+					<div className='lg:justify-self-end '>
 						<h3 className="text-white text-lg MyH5_new">Quick Links</h3>
-						<ul className="mt-4 space-y-3">
+						<ul className="mt-4 space-y-3 md:grid md:grid-cols-2 gap-4">
 							<li><Link href="/" className="text-gray-300 hover:underline" >Home</Link></li>
 							<li><Link href="/about" className="text-gray-300 hover:underline" >About Us</Link></li>
 							<li><Link href="/market" className="text-gray-300 hover:underline" >Market</Link></li>
@@ -67,6 +67,10 @@ export default function Footer() {
 							<li><Link href="/deals" className="text-gray-300 hover:underline" >Deals</Link></li>
 						</ul>
 					</div>
+
+
+
+					
 				</div>
 
 				<hr className="border-t border-gray-700 mt-8" />
