@@ -13,6 +13,7 @@ import Explore from "@/components/sections/Explore";
 import GetStarted from "@/components/sections/GetStarted";
 import Footer from "@/components/sections/Footer";
 import ScrollTopButton from '@/components/ui/ScrollTopButton'
+import CallUs from "@/components/ui/CallUs";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
      
      
    <Hero/>
+
+   <CallUs/>
 
     <ScrollTopButton/>
 

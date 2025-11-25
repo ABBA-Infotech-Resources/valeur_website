@@ -7,7 +7,7 @@ export default function MyForm() {
   }
 
   return (
-    <div className='flex flex-col items-start border-mysec border-2 bg-white rounded-lg gap-6 p-6'>
+    <div className='w-full flex flex-col items-start border-mysec border-2 bg-white rounded-lg gap-6 p-6'>
       <div className='w-full'>
         <h3 className='text-2xl MyH5 text-[#0f3740]'>Send Us Your Inquiry</h3>
         <p className='text-sm text-gray-500 mt-1'>Fill out the form below and our trade specialists will contact you within 24 hours.</p>

@@ -4,6 +4,8 @@ import Footer from '@/components/sections/Footer'
 import Navbar from '@/components/sections/Navbar'
 import Deals from '@/components/sections/Deals'
 import Explore from '@/components/sections/Explore'
+import ScrollTopButton from '@/components/ui/ScrollTopButton'
+import CallUs from '@/components/ui/CallUs'
 
 export default function page() {
   return (
@@ -11,6 +13,9 @@ export default function page() {
             
             
             <Navbar/>
+               <CallUs/>
+            
+             <ScrollTopButton/>
           
           <Deals/>
         

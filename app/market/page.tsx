@@ -5,6 +5,8 @@ import Navbar from '@/components/sections/Navbar'
 import Deals from '@/components/sections/Deals'
 import Explore from '@/components/sections/Explore'
 import Market from '@/components/sections/Market'
+import ScrollTopButton from '@/components/ui/ScrollTopButton'
+import CallUs from '@/components/ui/CallUs'
 
 export default function page() {
   return (
@@ -12,6 +14,9 @@ export default function page() {
               
               
               <Navbar/>
+                 <CallUs/>
+              
+               <ScrollTopButton/>
             
             <Market/>
           

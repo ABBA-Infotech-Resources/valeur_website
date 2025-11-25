@@ -6,21 +6,30 @@ export default function ScrollTopButton() {
 
   useEffect(() => {
     const hero = document.getElementById('hero')
-    if (!hero) return
 
-    const obs = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          // entry.isIntersecting === true means hero is visible
-          setShow(!entry.isIntersecting)
-        })
-      },
-      { root: null, threshold: 0 }
-    )
+    if (hero) {
+      const obs = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            // entry.isIntersecting === true means hero is visible
+            setShow(!entry.isIntersecting)
+          })
+        },
+        { root: null, threshold: 0 }
+      )
 
-    obs.observe(hero)
+      obs.observe(hero)
 
-    return () => obs.disconnect()
+      return () => obs.disconnect()
+    }
+
+    // Fallback for pages without a #hero element: show after user scrolls past threshold
+    const threshold = 300
+    const onScroll = () => setShow(window.scrollY > threshold)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+
+    return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
   const scrollTop = () => {
