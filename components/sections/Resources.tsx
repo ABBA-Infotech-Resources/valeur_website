@@ -5,7 +5,7 @@ import MyBtn_2 from '../ui/MyBtn_2'
 
 export default function Resources() {
   return (
-    <div className='flex flex-col items-center justify-center gap-6 px-8 w-full mt-20 mb-20'>
+    <div className='flex flex-col items-center justify-center gap-6 lg:px-20 p-8 mt-20 w-full  mb-20'>
 
         <TitleSection Title='Resources' Description='Your gateway to expert knowledge, market intelligence, and trade support for
       agricultural business between Europe and Nigeria.' titleClass='animate-fade-in-up' descClass='animate-fade-in-up' />
@@ -13,7 +13,7 @@ export default function Resources() {
 
 
 
-<div className="grid md:grid-cols-2 gap-20 w-[90%] justify-between ">
+<div className="grid md:grid-cols-2 gap-20 w-full justify-between ">
 
 
 <ResourcesCard Resource='Expert Advisory'

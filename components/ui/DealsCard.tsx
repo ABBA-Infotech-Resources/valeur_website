@@ -29,7 +29,7 @@ export default function DealsCard({Product,Product_title,desc_header,desc_body,K
     </h1>
 
     <p className='font-bold'>{desc_header}</p>
-    <p className='md:w-2xl'>{desc_body}</p>
+    <p className=''>{desc_body}</p>
 
 </div>
 

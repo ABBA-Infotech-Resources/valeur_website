@@ -5,10 +5,6 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import BtnToggle from '../ui/BtnToggle'
-import MyBtn from '../ui/MyBtn'
-import Image from 'next/image'
-import EU_Nigeria from '@/images/EU-Nigeria.jpg'  
-import Nigeria_EU from '@/images/Nigeria-Eu.jpg' 
 import EUNigeria from '../animated-elements/EUNigeria'
 import NigeriaEU from '../animated-elements/NigeriaEU'
 
@@ -16,9 +12,9 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default function MarketToggle() {
   const [selectedMarket, setSelectedMarket] = useState<'EU to Nigeria' | 'Nigeria to EU'>('Nigeria to EU');
-  const contentRef = useRef(null);
-  const imageRef = useRef(null);
-  const containerRef = useRef(null);
+  const contentRef = useRef<HTMLDivElement | null>(null);
+  const imageRef = useRef<HTMLDivElement | null>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
   const handleToggle = (market:'Nigeria to EU'  | 'EU to Nigeria') => {
     gsap.to(contentRef.current, {
@@ -32,13 +28,15 @@ export default function MarketToggle() {
          
 
        const offset = 80; // Adjust this value for your desired offset
-        const elementPosition = containerRef.current?.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - offset;
-        
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
+          if (!containerRef.current) return
+
+          const elementPosition = containerRef.current.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
       }
 
 
