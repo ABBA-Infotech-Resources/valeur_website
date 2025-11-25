@@ -22,7 +22,7 @@ export default function OurService() {
 
 
 <ServiceCard
- Service_no='Service 1' 
+ 
  Service='Trade Facilitation'
   Service_desc='Your trusted intermediary connecting agricultural producers, 
 exporters, and importers between Europe and Nigeria.' 
@@ -31,7 +31,7 @@ Onboarding={["Submit online trade inquiry form","Receive tailored proposal","Sig
 
 
 <ServiceCard
- Service_no='Service 2' 
+ 
  Service='Market Access Support'
   Service_desc='Helping Nigerian businesses penetrate EU markets and
 assisting European firms in scaling into West Africa.' 
@@ -39,7 +39,7 @@ How_it_works={["Market Analysis ","Compliance Audit","Certification Guidance","D
 Onboarding={["Book market readiness assessment","Receive compliance roadmap","Begin execution with VGC support"]}/>
 
 <ServiceCard
- Service_no='Service 3' 
+ 
  Service='B2B & B2G Matchmaking'
   Service_desc='Connecting businesses to businesses and businesses to
 government agencies for sustainable partnerships.' 
@@ -47,7 +47,7 @@ How_it_works={["Opportunity Profiling","Partner Search & Identification","Introd
 Onboarding={["Provide business profile","Receive vetted prospect shortlist","Engage in facilitated meetings"]}/>
 
 <ServiceCard
- Service_no='Service 4' 
+  
  Service='Agri Value Chain Consulting'
   Service_desc='Insights and strategies for every stage of the agricultural
 value chain — from farm to fork.' 

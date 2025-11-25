@@ -14,7 +14,7 @@ description:string
 
 export default function SupportCard({name,Img,description}:Proptype) {
   return (
-       <div className="flex flex-col items-start min-h-80  bg-m bg-mybg_2 rounded-lg p-8 max-w-96 gap-4 hover:scale-102 duration-500 transition-all">
+       <div className="flex flex-col items-start min-h-80  bg-m bg-mybg_2 rounded-lg p-8 max-w-96 gap-4 hover:scale-102 cursor-default duration-500 transition-all">
 
 <Image src={Img} alt='Local Partner' />
 <h1 className='MyH6'>{name}</h1>

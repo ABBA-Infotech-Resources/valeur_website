@@ -24,8 +24,25 @@ export default function MarketToggle() {
     gsap.to(contentRef.current, {
       opacity: 0,
       y: -10,
-      duration: 0.7,
-      onComplete: () => setSelectedMarket(market)
+      duration: 0.2,
+      onComplete: () =>
+        {
+        setSelectedMarket(market);
+        // Scroll to the section after state update
+         
+
+       const offset = 80; // Adjust this value for your desired offset
+        const elementPosition = containerRef.current?.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+        
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+
+
+
     })
     setSelectedMarket(market);
   }

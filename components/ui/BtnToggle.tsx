@@ -10,7 +10,7 @@ interface BtnToggleProps {
 
 export default function BtnToggle({ market, onToggle }: BtnToggleProps) {
   return (
-    <div className='rounded-lg p-4 flex flex-row bg-white gap-2.5'>
+    <div className='rounded-lg p-4 flex flex-row bg-white gap-[79px] shadow-sm  '>
       {market === 'EU to Nigeria' ? (
         <>
           <BtnInactive 

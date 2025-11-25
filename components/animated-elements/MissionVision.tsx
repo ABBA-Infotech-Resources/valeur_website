@@ -31,13 +31,13 @@ export default function MissionVision() {
     >
       {/* Vision Card */}
       <div 
-        className={`myBg shadow-md max-w-[542px] min-h-[223px] flex flex-col items-start justify-center gap-4 p-6 hover:scale-105 transition-all duration-700 ease-out hover:shadow-lg hover:bg-mybg_2 ${
+        className={`myBg shadow-md max-w-[542px] min-h-[223px] flex flex-col items-start justify-start  p-6 hover:scale-105 transition-all duration-700 ease-out hover:shadow-lg hover:bg-mybg_2 ${
           isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-24'
         }`}
       >
         <div>
           <h1 className='MyH5'>Our Vision</h1>
-          <p className='B1 text-mytext'>
+          <p className='B1 text-mytext mt-2'>
             To be the premier bridge for sustainable and inclusive agricultural trade between Europe and Africa.
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function MissionVision() {
 
       {/* Mission Card */}
       <div 
-        className={`myBg shadow-md max-w-[542px] min-h-[223px] flex flex-col items-start justify-center gap-4 p-6 hover:scale-105 transition-all duration-700 ease-out hover:shadow-lg hover:bg-mybg_2 ${
+        className={`myBg shadow-md max-w-[542px] min-h-[223px] flex flex-col items-start justify-center  p-6 hover:scale-105 transition-all duration-700 ease-out hover:shadow-lg hover:bg-mybg_2 ${
           isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-24'
         }`}
         style={{ transitionDelay: '100ms' }}
@@ -53,7 +53,7 @@ export default function MissionVision() {
         <div>
           <h1 className='MyH5'>Our Mission</h1>
         </div>
-        <ul className='B1 flex flex-col gap-4 text-mytext'>
+        <ul className='B1 mt-2 flex flex-col gap-4 text-mytext'>
           <li 
             className={`flex gap-3 items-center justify-start w-full transition-all duration-500 ease-out ${
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'

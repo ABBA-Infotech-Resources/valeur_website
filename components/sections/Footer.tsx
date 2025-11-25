@@ -10,11 +10,14 @@ import xicon from '@/images/X-twitter.png'
 import Link from 'next/link'
 import logo from '@/images/white_logo.png'
 
+
 export default function Footer() {
 	return (
 		<footer className="bg-[#142434] text-gray-300 w-full lg:px-21 px-6 py-12  md:px-12 ">
 			<div className=" ">
+			<Link href="/" className=''>
 						<Image src={logo} alt="Logo" className='h-24 w-auto mb-9' />
+						</Link>
 				<div className="grid  md:flex md:justify-between md:items-start  grid-cols-1 md:grid-cols-4	gap-8  ">
 					<div className="   ">
 						<h2 className="text-2xl MyH5_new text-white">Valeur Global Connect</h2>
@@ -66,9 +69,9 @@ export default function Footer() {
 						</div>
 
 
-					<div className='  '>
+					<div className=' md:w-[300px] '>
 						<h3 className="text-white text-lg MyH5_new">Quick Links</h3>
-						<ul className="mt-3 space-y-3 md:grid md:grid-cols-2 gap-5 ">
+						<ul className="mt-3 space-y-3 md:grid md:grid-cols-2  ">
 							{/* <li><Link href="/" className="text-gray-300 hover:underline" >Home</Link></li> */}
 							<li><Link href="/about" className="text-gray-300 hover:underline" >About Us</Link></li>
 							<li><Link href="/market" className="text-gray-300 hover:underline" >Market</Link></li>

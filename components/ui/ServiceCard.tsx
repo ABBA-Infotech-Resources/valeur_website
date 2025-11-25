@@ -7,7 +7,7 @@ import double_mark from '@/images/double_mark.png'
 
 interface PropType{
 
-Service_no:string,
+
 Service:string,
 Service_desc:string,
 How_it_works:string[],
@@ -15,11 +15,11 @@ Onboarding:string[]
 
 }
 
-export default function ServiceCard({Service_no,Service,Service_desc,How_it_works,Onboarding}:PropType) {
+export default function ServiceCard({Service,Service_desc,How_it_works,Onboarding}:PropType) {
   return (
    <div className="flex flex-col items-start border-mysec border-2 bg-white rounded-lg gap-6  p-4 duration-500 hover:shadow-lg hover:scale-101 transition-all"> 
 
-    <p className='text-mysec bg-mybg rounded-lg p-3.5'>{Service_no}</p>
+    <p className='text-mysec bg-mybg rounded-lg p-3.5'>     </p>
     <div className="flex flex-col">
     <h1 className="MyH5">
        {Service}
