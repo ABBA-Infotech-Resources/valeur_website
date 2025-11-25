@@ -8,14 +8,14 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 export default function AboutRight() {
-  const containerRef = useRef(null)
+  const containerRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
     // Wait for images to load and DOM to be ready
     const timer = setTimeout(() => {
       if (!containerRef.current) return
 
-      const images = containerRef.current.querySelectorAll('img')
+      const images = containerRef.current.querySelectorAll('img') as NodeListOf<HTMLImageElement>
       
       if (images.length === 0) return
 
