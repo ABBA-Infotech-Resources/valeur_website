@@ -17,7 +17,7 @@ Onboarding:string[]
 
 export default function ServiceCard({Service_no,Service,Service_desc,How_it_works,Onboarding}:PropType) {
   return (
-   <div className="flex flex-col items-start border-mysec border-2 bg-white rounded-lg gap-6  p-4 ">
+   <div className="flex flex-col items-start border-mysec border-2 bg-white rounded-lg gap-6  p-4 duration-500 hover:shadow-lg hover:scale-101 transition-all"> 
 
     <p className='text-mysec bg-mybg rounded-lg p-3.5'>{Service_no}</p>
     <div className="flex flex-col">

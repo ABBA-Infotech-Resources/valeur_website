@@ -58,7 +58,7 @@ export default function Footer() {
 					<div className=' lg:justify-self-end w-full'>
 						<h3 className="text-white text-lg MyH5_new">Quick Links</h3>
 						<ul className="mt-4 space-y-3 md:grid md:grid-cols-2 ">
-							<li><Link href="/" className="text-gray-300 hover:underline" >Home</Link></li>
+							{/* <li><Link href="/" className="text-gray-300 hover:underline" >Home</Link></li> */}
 							<li><Link href="/about" className="text-gray-300 hover:underline" >About Us</Link></li>
 							<li><Link href="/market" className="text-gray-300 hover:underline" >Market</Link></li>
 							<li><Link href="/trade" className="text-gray-300 hover:underline" >Trade</Link></li>

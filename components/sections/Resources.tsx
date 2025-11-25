@@ -8,7 +8,7 @@ export default function Resources() {
     <div className='flex flex-col items-center justify-center gap-6 px-8 w-full mt-20 mb-20'>
 
         <TitleSection Title='Resources' Description='Your gateway to expert knowledge, market intelligence, and trade support for
-agricultural business between Europe and Nigeria.' />
+      agricultural business between Europe and Nigeria.' titleClass='animate-fade-in-up' descClass='animate-fade-in-up' />
 
 
 

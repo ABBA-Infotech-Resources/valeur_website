@@ -9,7 +9,7 @@ export default function OurService() {
     <div className='flex flex-col gap-6 items-center justify-center lg:px-20 p-8 mt-20'>
         
       <TitleSection Title='Our Services' Description='Strategic pathways to lasting trade relationships. As a French-based company with deep networks in 
-Nigeria and West Africa, we deliver precision, trust, and market intelligence every step of the way.'/>
+    Nigeria and West Africa, we deliver precision, trust, and market intelligence every step of the way.' titleClass='animate-fade-in-up' descClass='animate-fade-in-up' />
 
       <div className='w-[90%] h-64 md:h-[408px] relative overflow-hidden rounded-lg'>
         <Image src={Service_3} alt='Valeur_service' fill className='object-cover' />

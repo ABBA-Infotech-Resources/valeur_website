@@ -10,10 +10,12 @@ import Image from 'next/image'
 export default function Deals() {
   return (
     <div className='flex flex-col  items-center justify-center lg:px-20 gap-4 px-8 mt-20 '>
-      <TitleSection
-        Title='Deal'
-        Description='Signature product lines and platforms that bridge EU quality with Nigerian market potential, showcasing our commitment to excellence in agricultural trade.'
-      />
+            <TitleSection
+              Title='Deal'
+              Description='Signature product lines and platforms that bridge EU quality with Nigerian market potential, showcasing our commitment to excellence in agricultural trade.'
+              titleClass='animate-fade-in-up'
+              descClass='animate-fade-in-up'
+            />
 
       <div className='w-full grid grid-cols-1 md:grid-cols-2 items-center gap-12'>
         <div className='w-full'>

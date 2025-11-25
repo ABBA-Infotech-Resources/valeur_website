@@ -19,7 +19,7 @@ How_it_works:string[]
 
 export default function ResourcesCard({Resource,Resource_title,desc_header,desc_body,Offerings,How_it_works,Note}:PropType) {
   return (
-   <div className="flex flex-col items-start border-mysec border-2 bg-white rounded-lg gap-6  p-4 ">
+   <div className="flex flex-col items-start border-mysec border-2 bg-white rounded-lg gap-6  p-4 duration-500 hover:shadow-lg hover:scale-101 transition-al ">
 
     <p className='text-mysec bg-mybg rounded-lg p-3.5'>{Resource}</p>
     <div className="flex flex-col">
