@@ -51,7 +51,7 @@ export default function LeftText() {
         className={`${baseClass} ${visibleClass}`}
         style={{ transitionDelay: '400ms' }}
       >
-        <MyBtn name='Explore Services' />
+        <MyBtn name='Explore Services' link='/market' />
       </div>
     </div>
   )

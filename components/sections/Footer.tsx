@@ -15,32 +15,12 @@ export default function Footer() {
 		<footer className="bg-[#142434] text-gray-300 w-full lg:px-21 px-6 py-12  md:px-12 ">
 			<div className=" ">
 						<Image src={logo} alt="Logo" className='h-24 w-auto mb-9' />
-				<div className="grid grid-cols-1 md:grid-cols-4	gap-8  ">
-					<div className="md:col-span-2 md:col-start-1  ">
+				<div className="grid  md:flex md:justify-between md:items-start  grid-cols-1 md:grid-cols-4	gap-8  ">
+					<div className="   ">
 						<h2 className="text-2xl MyH5_new text-white">Valeur Global Connect</h2>
-						<p className="mt-3 text-sm text-gray-300 max-w-lg">French Agricultural Trade Facilitator connecting Europe and Africa through trusted partnerships, regulatory compliance expertise, and sustainable trade solutions.</p>
-
-						
-
-						
-					</div>
-					<div className=" space-y-3 text-gray-300 	 ">
-						<h3 className="text-white text-lg MyH5_new">Get in Touch</h3>
-							<div className="flex items-center gap-3">
-								<Image src={addressIcon} alt='address' className='w-5 h-5'/>
-								<span className="text-sm">123 Avenue des Champs-Élysées75008 Paris, France</span>
-							</div>
-
-							<div className="flex items-center gap-3">
-								<Image src={phoneIcon} alt='phone' className='w-5 h-5'/>
-								<span className="text-sm">+33 1 42 96 12 34</span>
-							</div>
-
-							<div className="flex items-center gap-3">
-								<Image src={mailIcon} alt='mail' className='w-5 h-5'/>
-								<a className="text-sm hover:underline" href="mailto:paris@valeurglobalconnect.com">paris@valeurglobalconnect.com</a>
-							</div>
-							<div className="mt-6 flex items-center gap-3">
+						<p className="mt-3 text-sm text-gray-300 max-w-lg">French Agricultural Trade Facilitator connecting Europe <br/>
+							 and Africa through trusted partnerships, <br/> regulatory compliance expertise, and sustainable trade solutions.</p>
+							 <div className="mt-6 flex items-center gap-3">
 							<a aria-label="LinkedIn" className="w-8 h-8 rounded-full bg-[#c8f6d1] flex items-center justify-center text-[#0f3740] hover:scale-105 duration-500 hover:shadow-sm transition-all" href="#">
 								<Image src={linkedin} alt='linkedin' className=''/>
 							</a>
@@ -51,7 +31,7 @@ export default function Footer() {
 
 							<a aria-label="Facebook" className="w-8 h-8 rounded-full bg-[#c8f6d1] flex items-center justify-center text-[#0f3740] hover:scale-105 duration-500 hover:shadow-sm transition-all" href="#">
 								<Image src={facebook} alt='facebook' className=''/>
-							</a>
+							</a	>
 
 							<a aria-label="Instagram" className="w-8 h-8 rounded-full bg-[#c8f6d1] flex items-center justify-center text-[#0ac499] hover:scale-105 duration-500 hover:shadow-sm transition-all" href="#">
 								<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
@@ -60,13 +40,35 @@ export default function Footer() {
 									<circle cx="17.6" cy="6.4" r="0.6" fill="currentColor" />
 								</svg>
 							</a>
-						</div>	
+						</div>
+
+						
+
+						
+					</div>
+					<div className="  text-gray-300  	 ">
+						<h3 className="text-white text-lg MyH5_new">Get in Touch</h3>
+							<div className=" mt-3 flex items-center gap-3">
+								<Image src={addressIcon} alt='address' className='w-5 h-5'/>
+								<span className="text-sm">123 Avenue des Champs-Élysées75008 Paris, France</span>
+							</div>
+
+							<div className=" mt-3 flex items-center gap-3">
+								<Image src={phoneIcon} alt='phone' className='w-5 h-5'/>
+								<span className="text-sm">+33 1 42 96 12 34</span>
+							</div>
+
+							<div className=" mt-3 flex items-center gap-3">
+								<Image src={mailIcon} alt='mail' className='w-5 h-5'/>
+								<a className="text-sm hover:underline" href="mailto:paris@valeurglobalconnect.com">paris@valeurglobalconnect.com</a>
+							</div>
+								
 						</div>
 
 
-					<div className=' lg:justify-self-end w-full'>
+					<div className='  '>
 						<h3 className="text-white text-lg MyH5_new">Quick Links</h3>
-						<ul className="mt-4 space-y-3 md:grid md:grid-cols-2 ">
+						<ul className="mt-3 space-y-3 md:grid md:grid-cols-2 gap-5 ">
 							{/* <li><Link href="/" className="text-gray-300 hover:underline" >Home</Link></li> */}
 							<li><Link href="/about" className="text-gray-300 hover:underline" >About Us</Link></li>
 							<li><Link href="/market" className="text-gray-300 hover:underline" >Market</Link></li>
