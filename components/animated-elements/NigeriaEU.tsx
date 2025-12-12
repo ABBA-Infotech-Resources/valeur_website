@@ -37,9 +37,9 @@ export default function NigeriaEU({cRef,iRef}: any) {
           </div>
         </div>
 
-        <OurSupportNG/>
 
         <WhoweareNG/>
+        <OurSupportNG/>
 
 
       

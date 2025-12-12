@@ -9,7 +9,7 @@ export default function WhoweareEU() {
 
 <ul className="grid grid-cols-2 gap-6 text-mytext">
 
-    <li>Exporters of fresh fruits, vegetables, and horticultural products</li>
+    <li>Exporters of agro commodities</li>
     <li>Processed food manufacturers seeking EU retail entry</li>
     <li>Agricultural cooperatives aiming for premium global markets</li>
    

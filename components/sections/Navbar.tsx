@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import logo from '@/images/Valeur_Logo.png'
+import logo_white from '@/images/white_logo.png'
+
 import MyBtn from '../ui/MyBtn'
 import Link from 'next/link'
 
@@ -24,7 +26,7 @@ export default function Navbar() {
     { href: '/market', label: 'Market' },
     { href: '/trade', label: 'Trade' },
     { href: '/resources', label: 'Resources' },
-    { href: '/deals', label: 'Deals' },
+    { href: '/deals', label: 'Our Product Chain' },
   ]
 
   return (
@@ -32,9 +34,14 @@ export default function Navbar() {
       isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
     }`}>
       <div className='flex flex-row justify-between items-center w-full   '>
-        {/* Logo */}
-        <Link href="/" className='z-50'>
-          <Image src={logo} alt="Logo" className='h-8 w-auto md:h-16 ' />
+        {/* Mobile Logo */}
+        <Link href="/" className='z-50 flex lg:hidden'>
+         {isOpen ? <Image src={logo_white} alt="Logo" className='h-8 w-auto md:h-16 ' /> : <Image src={logo} alt="Logo" className='h-8 w-auto md:h-16 ' />  }
+        </Link>
+
+        {/* Desktop Logo */}
+ <Link href="/" className='z-50 hidden lg:flex'>
+           <Image src={logo} alt="Logo" className='h-8 w-auto md:h-16 ' />  
         </Link>
 
         {/* Desktop Navigation */}
@@ -87,7 +94,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div 
-        className={`lg:hidden fixed top-0 right-0 h-screen w-64 bg-black/95 backdrop-blur-lg transform transition-transform duration-300 ease-in-out z-50 ${
+        className={`lg:hidden fixed top-0 right-0 h-screen w-64 bg-black/45 backdrop-blur-lg transform transition-transform duration-300 ease-in-out z-50 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

@@ -43,9 +43,9 @@ export default function EUNigeria({cRef,iRef}: any) {
           </div>
         </div>
 
-<OurSupport/>
 
 <Whoweare/>
+<OurSupport/>
 
     </>
   )
