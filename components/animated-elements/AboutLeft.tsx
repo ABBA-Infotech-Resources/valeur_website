@@ -78,7 +78,7 @@ export default function AboutLeft() {
         
         <div className='text-mytext'>
           <div ref={paragraph1Ref}>
-            Valeur Global Connect (VGC) is a Paris-based agri-trade company with a mission to bridge Europe and Africa's agricultural value chain. Our head office in France drives our European operations — ensuring compliance with EU agricultural trade laws, packaging requirements, and food safety standards.
+            Valeur Global Connect (VGC) is a Paris-based agri-trade company with a mission to bridge Europe and Africa’s agricultural value chain. Operating from France, we work closely with EU agribusinesses, government agencies, and value-chain stakeholders to support structured and sustainable agricultural trade.
           </div>
 
           <div className='my-6'></div>
