@@ -75,7 +75,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button 
           onClick={() => setIsOpen(!isOpen)}
-          className='lg:hidden z-50 w-8 h-8 flex flex-col justify-center items-center gap-1.5 group bg-mysec'
+          className='lg:hidden z-60 w-8 h-8 flex flex-col justify-center items-center gap-1.5 group bg-mysec'
           aria-label='Toggle menu'
         >
           <span className={`w-6 h-0.5 bg-white group-hover:bg-mysec transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
@@ -94,7 +94,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div 
-        className={`lg:hidden fixed top-0 right-0 h-screen w-64 bg-black/45 backdrop-blur-lg transform transition-transform duration-300 ease-in-out z-50 ${
+        className={`lg:hidden fixed top-0 right-0 h-screen w-64 bg-black/25 backdrop-blur-xs  transform transition-transform duration-300 ease-in-out z-50 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -130,7 +130,7 @@ export default function Navbar() {
       {isOpen && (
         <div 
           onClick={() => setIsOpen(false)}
-          className='lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40'
+          className='lg:hidden fixed inset-0 bg-black/20  z-40'
         />
       )}
     </nav>

@@ -44,11 +44,15 @@ export default function OurSupportEU() {
           }`}
           style={{ transitionDelay: '100ms' }}
         >
-          <SupportCard 
-            name='EU Standards Compliance' 
-            description='Guidance and facilitation for traceability systems, phytosanitary certificates, organic certifications, and other regulatory requirements.' 
-            Img={local} 
+
+<SupportCard 
+            name='Market Matchmaking' 
+            description='Introducing you to reputable buyers, processors, and wholesalers across Europe.' 
+            Img={Trade} 
           />
+
+
+         
         </div>
 
         <div 
@@ -70,11 +74,15 @@ export default function OurSupportEU() {
           }`}
           style={{ transitionDelay: '400ms' }}
         >
-          <SupportCard 
-            name='Market Matchmaking' 
-            description='Introducing you to reputable buyers, processors, and wholesalers across Europe.' 
-            Img={Trade} 
+        
+
+        <SupportCard 
+            name='EU Standards Compliance' 
+            description='Guidance and facilitation for traceability systems, phytosanitary certificates, organic certifications, and other regulatory requirements.' 
+            Img={local} 
           />
+
+
         </div>
       </div>
     </div>

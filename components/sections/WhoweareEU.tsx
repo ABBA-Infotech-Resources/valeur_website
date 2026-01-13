@@ -10,15 +10,22 @@ export default function WhoweareEU() {
 <ul className="grid grid-cols-2 gap-6 text-mytext">
 
     <li>Agritech innovators introducing 
-cutting-edge farming solutions</li>
+cutting-edge farming solutions
+<div className="border-t border-dotted border-gray-300 my-4 "></div>
+</li>
     <li>Exporters seeking new sales 
-channels</li>
+channels
+<div className="border-t border-dotted border-gray-300 my-4 "></div>
+</li>
     <li>Food processors expanding 
-sourcing networks</li>
+sourcing networks
+<div className="border-t border-dotted border-gray-300 my-4 "></div></li>
     <li>Agricultural input suppliers (seeds, 
-fertilizers, irrigation systems)</li>
+fertilizers, irrigation systems)
+<div className="border-t border-dotted border-gray-300 my-4 "></div></li>
     <li>Agri-investors building scalable 
-West African ventures</li>
+West African ventures
+<div className="border-t border-dotted border-gray-300 my-4 "></div></li>
 
 
 

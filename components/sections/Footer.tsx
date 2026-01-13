@@ -90,7 +90,7 @@ export default function Footer() {
 				<hr className="border-t border-gray-700 mt-8" />
 
 				<div className="mt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-					<div className="text-sm text-gray-400">© 2025 Valeur Global Connect. All rights reserved.</div>
+					<div className="text-sm text-gray-400">© 2026 Valeur Global Connect. All rights reserved.</div>
 
 					<div className="flex items-center gap-6 text-sm">
 						<a className="text-gray-300 hover:underline" href="#">Privacy Policy</a>

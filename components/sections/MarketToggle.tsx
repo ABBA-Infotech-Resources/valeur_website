@@ -71,8 +71,8 @@ export default function MarketToggle() {
           start: "top bottom",
           end: "bottom top",
           scrub: 1,
-          onEnter: () => console.log('Image entering'),
-          onLeave: () => console.log('Image leaving'),
+          onEnter: () => console.log(''),
+          onLeave: () => console.log(''),
         }
       }
     )
