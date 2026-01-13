@@ -75,10 +75,10 @@ export default function Footer() {
 							{/* <li><Link href="/" className="text-gray-300 hover:underline" >Home</Link></li> */}
 							<li><Link href="/about" className="text-gray-300 hover:underline" >About Us</Link></li>
 							<li><Link href="/market" className="text-gray-300 hover:underline" >Market</Link></li>
-							<li><Link href="/trade" className="text-gray-300 hover:underline" >Trade</Link></li>
-							<li><Link href="/trade" className="text-gray-300 hover:underline" >Resources</Link></li>
+							<li><Link href="/trade" className="text-gray-300 hover:underline" >Services</Link></li>
 
-							<li><Link href="/deals" className="text-gray-300 hover:underline" >Deals</Link></li>
+							<li><Link href="/deals" className="text-gray-300 hover:underline" >Products</Link></li>
+							<li><Link href="/resources" className="text-gray-300 hover:underline" >Resources</Link></li>
 						</ul>
 					</div>
 

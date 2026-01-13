@@ -17,7 +17,7 @@ import CallUs from "@/components/ui/CallUs";
 
 export default function Home() {
   return (
-    <div className="flex flex-col  items-center  font-sans dark:bg-white w-full ">
+    <div className="flex flex-col  items-center  font-sans dark:bg-white w-screen">
      
      
    <Hero/>

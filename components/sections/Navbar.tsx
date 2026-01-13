@@ -24,9 +24,9 @@ export default function Navbar() {
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/market', label: 'Market' },
-    { href: '/trade', label: 'Trade' },
-    { href: '/resources', label: 'Resources' },
-    { href: '/deals', label: 'Our Product Chain' },
+    { href: '/trade', label: 'Services' },
+       { href: '/deals', label: 'Products' },
+    { href: '/resources', label: 'Resources' }
   ]
 
   return (
@@ -88,7 +88,7 @@ export default function Navbar() {
       {isOpen && (
         <div 
           onClick={() => setIsOpen(false)}
-          className='lg:hidden fixed inset-0 bg-mywhite/50 backdrop-blur-sm z-40'
+          className='lg:hidden fixed inset-0 bg-mywhite/50  z-40'
         />
       )}
 

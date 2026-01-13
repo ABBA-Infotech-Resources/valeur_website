@@ -27,7 +27,7 @@ export default function MissionVision() {
   return (
     <div 
       ref={containerRef}
-      className="flex md:flex-row flex-col p-8 mt-4 gap-14 w-full items-center justify-center"
+      className="flex md:flex-row flex-col p-8 mt-4 gap-14 w-full items-center justify-center overflow-hidden bg-red-100"
     >
       {/* Vision Card */}
       <div 

@@ -23,7 +23,7 @@ export default function Hero() {
 
 
 <Navbar/>
-<div className='flex flex-row w-full justify-between items-center lg:pt-20 pt-36'> 
+<div className='flex flex-col md:flex-row w-full justify-between items-center lg:pt-20 pt-36'> 
 <LeftText/>
 
 

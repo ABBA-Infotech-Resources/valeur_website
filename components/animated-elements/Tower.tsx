@@ -42,7 +42,9 @@ export default function Tower() {
   }, [isLoaded])
 
   return (
+    <>
     <div ref={imageRef} style={{ opacity: 0 }}>
+      {/* web version */}
       <Image 
         src={Paris}  
         className='object-cover hidden md:flex w-2xl h-screen' 
@@ -50,6 +52,20 @@ export default function Tower() {
         onLoad={() => setIsLoaded(true)}
         priority
       />
+
+
+      {/* Mobile version */}
+
+      <Image 
+        src={Paris}  
+        className='object-cover flex md:hidden w-md   h-screen' 
+        alt='Eiffel Tower'
+        onLoad={() => setIsLoaded(true)}
+        priority
+      />
+
+     
     </div>
+    </>
   )
 } 
