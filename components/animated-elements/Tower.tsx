@@ -58,7 +58,7 @@ export default function Tower() {
 
       <Image 
         src={Paris}  
-        className='object-cover flex md:hidden w-md   h-screen' 
+        className='object-cover flex md:hidden w-sm mr-50   ' 
         alt='Eiffel Tower'
         onLoad={() => setIsLoaded(true)}
         priority
